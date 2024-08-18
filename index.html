@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #212529;
+            height: 100px;
+        }
+
+        .carousel-item {
+            margin-top: 4%;
+            margin-bottom: 10%;
+            height: 400px;
+            background-color: #212529;
+        }
+
+        .carousel-indicators {
+            margin-bottom: 10%;
+        }
+
+        .carousel-item img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .card {
+            height: 100%;
+            margin-bottom: 20px;
+        }
+
+        .card-footer {
+            border-bottom: 10px;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.927);
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn-primary {
+            margin-top: auto;
+        }
+
+        a {
+            width: 100px;
+        }
+
+        footer {
+            background-color: #212529;
+            height: 12px;
+        }
+
+        .col-4 {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+            .col-4 {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
+            .col-4 {
+                width: 33%;
+            }
+        }
+
+    </style>
+    <title>História</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-bg-dark">Períodos da História</h1>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="https://static.historiadomundo.com.br/2022/12/zigurate-sumerios.jpg" class="d-block w-100" alt="Sumérios">
+                <div class="carousel-caption">
+                    <h2>Sumérios</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://conteudo.imguol.com.br/c/entretenimento/4c/2021/02/12/stonehenge-1613142278488_v2_900x506.jpg" class="d-block w-100" alt="Celtas">
+                <div class="carousel-caption">
+                    <h2>Celtas</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://mundodeviagens.com/wp-content/uploads/2016/02/piramides-de-gize.jpg" class="d-block w-100" alt="Egipícios">
+                <div class="carousel-caption">
+                    <h2>Egipícios</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://super.abril.com.br/wp-content/uploads/2018/07/um-terremoto-danificou-uma-pirc3a2mide-no-mc3a9xico-e-expc3b4s-um-templo-asteca-escondido_home.png?w=720&h=440&crop=3000" class="d-block w-100" alt="Astecas">
+                <div class="carousel-caption">
+                    <h2>Astecas</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0646/4035/files/Wat_Chaiwatthanaram.jpg?v=1661432015" class="d-block w-100" alt="Tailandeses">
+                <div class="carousel-caption">
+                    <h2>Tailandeses</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://www.infoescola.com/wp-content/uploads/2012/06/partenon-74829628.jpg" class="d-block w-100" alt="Gregos">
+                <div class="carousel-caption">
+                    <h2>Gregos</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/16/18/f8/1618f812c33fdd1504391c6114e7fa0f.jpg" class="d-block w-100" alt="Nativos Americanos">
+                <div class="carousel-caption">
+                    <h2>Nativos Americanos</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://i.pinimg.com/originals/9d/c3/fc/9dc3fcf4818fbdcca3816546a7fe7923.jpg" class="d-block w-100" alt="Vikings">
+                <div class="carousel-caption">
+                    <h2>Vikings</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/aPo2Oi0I9UeRimpXxyaVkjaEQn7sxw-9JETTBNrIgabwJBxsZT1MVsSnc-BFfxV0QmkaV54jNjbtRdLfDiSliNL2cUFyRkBJsDVdUzsLEoKg7MLdFr5Q5huGqEhUEy_UVinz-1amzsx0ZvLNeeaZabhQbUbSulJc1mf9_cGqo5isMKqqd96LPIoGyaxWg3qoCdIq5gLZu1fBAL3bBtb1dKw3U5hLEVbgsFtwAoDMPDyR_jw4vypeNlS9qirHBKaA64HSj2jrb4RHhzRjWHOG1t_1vNPoRI57hgWzWaORHn9rmXp5Sm4ywjLtG5dBL30uwAg1vr8fzwMHUGVqbjGWfa_IpLopJ9nOfSvNKKfQJRbjFRMkRvbbf5q9ZRBHeXyZn9EW1SLP7UAL1NKdoUZkzJ7BTf1YSDgqGWSMTjWjvOGb2ULq20vPVu1gInCC8QlB3Phlkqgyp2DBshf66S6zGdswUdghst46TfMLw03BodZsXzTYLR3a_fDW4883KtZqJPRtKADugPPy8HAnN_5c4EV6qVaCqvCkZH8dAl24QjwCXn_wmwR54abcKcja12ft4KBlHixy29F37rIn9yjdBu5dBgAV0VZglRmm0u8dpwg5blzX=w600-h400-no" class="d-block w-100" alt="Japoneses">
+                <div class="carousel-caption">
+                    <h2>Japoneses</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://www.civitatis.com/blog/wp-content/uploads/2022/03/mezquita-estambul-1-1280x854.jpg" class="d-block w-100" alt="Arabes">
+                <div class="carousel-caption">
+                    <h2>Árabes</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://allmadloja.com.br/wp-content/uploads/2019/08/caracter%C3%ADsticas-da-arquitetura-g%C3%B3tica.webp" class="d-block w-100" alt="Góticos">
+                <div class="carousel-caption">
+                    <h2>Góticos</h2>
+                </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="8"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="9"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="10"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Pré-História</h4>
+                    </div>
+                    <img src="https://static.ndmais.com.br/2024/04/arte-na-pre-historia-rupestre-1200x800.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Paleolítico: Uso de ferramentas de pedra; vida nômade baseada na caça e coleta.<br>
+                            Neolítico: Início da agricultura e domesticação de animais; surgimento das primeiras aldeias.<br>
+                            Idade dos Metais: Introdução do bronze e ferro; desenvolvimento de ferramentas e armas mais avançadas.
+                        </p>
+                         <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                    <div class="card-footer">
+                        <time>2,5 mi a.C - 3.000 a.C</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Era do Bronze</h4>
+                    </div>
+                    <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/01/idade-do-bronze-o-que-foi-quando-ocorreu-e-quais-transformacoes-proporcionou.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Civilizações Antigas: Surgimento de sociedades complexas como Egito e Mesopotâmia; uso do bronze para ferramentas e armas; crescimento de cidades e comércio internacional.
+                        </p>
+                         <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                    <div class="card-footer">
+                        <time>3.300 a.C - 1.200 a.C</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Período Clássico</h4>
+                    </div>
+                    <img src="https://essaseoutras.com.br/wp-content/uploads/2011/05/grecia-classica.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Grécia Antiga: Desenvolvimento da democracia, filosofia e arte; cidades-estado como Atenas e Esparta.<br>
+                            Roma Antiga: Crescimento do Império Romano; avanços no direito, engenharia e difusão do cristianismo.<br>
+                            Fim: Queda do Império Romano do Ocidente em 476 d.C.
+                        </p>
+                         <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                    <div class="card-footer">
+                        <time>800 a.C - 500 d.C</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Idade Média</h4>
+                    </div>
+                    <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2011/11/Idade-Media.jpg?quality=100&strip=info&w=720&crop=3000" alt="">
+                    <div class="card-body">
+                        <p>
+                            Alta Idade Média: Fragmentação da Europa após a queda de Roma; feudalismo; ascensão da Igreja Católica.<br>
+                            Baixa Idade Média: Crescimento populacional e urbano; Cruzadas; Peste Negra.
+                        </p>
+                         <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                    <div class="card-footer">
+                        <time>500 d.C - 1.300 d.C</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Renascentismo</h4>
+                    </div>
+                    <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/renascimento-michelangelo-artes.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Redescobrimento da Cultura Clássica: Interesse renovado na arte e filosofia da Grécia e Roma antigas.<br>
+                            Humanismo: Foco na condição humana; inovações científicas e tecnológicas; grandes artistas como Leonardo da Vinci.
+                        </p>
+                         <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                    <div class="card-footer">
+                        <time>1.300 d.C - 1.600 d.C</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Idade Contemporânea</h4>
+                    </div>
+                    <img src="https://fatosmilitares.com/wp-content//uploads/2017/11/Conquista-do-Fort-Sapun-Gora-em-Sevastopol.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Revoluções Políticas e Sociais: Revolução Francesa; crescimento do capitalismo industrial.<br>
+                            Revolução Industrial: Transformações econômicas e sociais impulsionadas pela mecanização e urbanização.<br>
+                            Século XX e Era Digital: Grandes conflitos como as Guerras Mundiais; avanços tecnológicos e o surgimento da internet.
+                        </p>
+                         <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                    <div class="card-footer">
+                        <time>1.789 d.C - </time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3 class="text-bg-dark">
+            Eduardo Winter - EBAC
+        </h3>
+    </footer>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
